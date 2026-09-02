@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Barbecue — кафе восточной кухни в Караганде." />
+    <title>Barbecue — кафе восточной кухни в Караганде</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Barbecue — на главную">
+          <span class="brand-mark">B</span><span>Barbecue</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="#about">О кафе</a><a href="#menu">Меню</a><a href="#gallery">Галерея</a><a href="#contacts">Контакты</a>
+          <a class="button button-small mobile-call" href="tel:+77025494649">Позвонить</a>
+        </nav>
+        <a class="button button-small nav-call" href="tel:+77025494649">Позвонить <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-art" aria-hidden="true"><div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div><div class="hero-pattern"></div></div>
+        <div class="container hero-content">
+          <p class="eyebrow light">Караганда · Восточная кухня</p>
+          <h1>Barbecue</h1>
+          <p class="hero-title">Кафе восточной кухни<br />в Караганде</p>
+          <p class="hero-copy">Завтраки, бизнес-ланчи и блюда восточной кухни в уютной атмосфере.</p>
+          <div class="hero-actions"><a class="button button-gold" href="tel:+77025494649">Позвонить <span aria-hidden="true">↗</span></a><a class="text-link light" href="#menu">Посмотреть меню <span>↓</span></a></div>
+        </div>
+        <a class="scroll-hint" href="#about" aria-label="Перейти к разделу о кафе"><span></span>Листайте ниже</a>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="about-visual reveal">
+            <div class="image-placeholder image-main"><span class="placeholder-icon">✦</span><span>Фотография кафе</span></div>
+            <div class="image-placeholder image-mini"><span class="placeholder-icon">⌁</span><span>Ваше фото</span></div>
+            <div class="visual-note">уютная<br /><em>атмосфера</em></div>
+          </div>
+          <div class="about-content reveal">
+            <p class="eyebrow">О кафе</p>
+            <h2>О кафе <em>Barbecue</em></h2>
+            <p class="lead">Barbecue — уютное кафе восточной кухни в Караганде. Здесь можно позавтракать, пообедать и провести время в приятной атмосфере.</p>
+            <div class="features">
+              <div><span class="feature-icon">✧</span><p>Восточная<br />кухня</p></div><div><span class="feature-icon">☼</span><p>Завтраки</p></div><div><span class="feature-icon">◒</span><p>Бизнес-ланчи</p></div><div><span class="feature-icon">30</span><p>Посадочных<br />мест</p></div><div><span class="feature-icon">P</span><p>Бесплатная<br />парковка</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          <div class="section-heading centered reveal"><p class="eyebrow">Меню</p><h2>Вкус, который<br /><em>ожидает встречи</em></h2><p>Актуальное меню готовится к публикации.</p></div>
+          <div class="menu-card reveal">
+            <div class="menu-card-top"><span class="menu-stamp">B</span><p>Меню скоро появится</p><span class="line"></span></div>
+            <div class="category-list" aria-label="Будущие категории меню"><span>Завтраки</span><span>Салаты</span><span>Супы</span><span>Основные блюда</span><span>Восточные блюда</span><span>Напитки</span></div>
+            <a class="button button-dark" href="tel:+77025494649">Уточнить меню по телефону <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery" id="gallery">
+        <div class="container">
+          <div class="gallery-head reveal"><div><p class="eyebrow">Галерея</p><h2>Место для<br /><em>ваших моментов</em></h2></div><p>Добавьте фотографии интерьера, блюд и атмосферы кафе — они появятся здесь.</p></div>
+          <div class="gallery-grid reveal">
+            <button class="gallery-item tall" data-label="Интерьер кафе" aria-label="Открыть: Интерьер кафе"><span class="gallery-number">01</span><span class="placeholder-icon">⌁</span><span>Интерьер кафе</span></button>
+            <button class="gallery-item wide" data-label="Блюда восточной кухни" aria-label="Открыть: Блюда восточной кухни"><span class="gallery-number">02</span><span class="placeholder-icon">✦</span><span>Блюда восточной кухни</span></button>
+            <button class="gallery-item" data-label="Атмосфера Barbecue" aria-label="Открыть: Атмосфера Barbecue"><span class="gallery-number">03</span><span class="placeholder-icon">◒</span><span>Атмосфера Barbecue</span></button>
+            <button class="gallery-item" data-label="Ваши фотографии" aria-label="Открыть: Ваши фотографии"><span class="gallery-number">04</span><span class="placeholder-icon">✧</span><span>Ваши фотографии</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="container contacts-grid">
+          <div class="contact-info reveal"><p class="eyebrow light">Контакты</p><h2>Мы ждём<br /><em>вас</em></h2><p class="address">Barbecue<br />г. Караганда, ул. Таттимбета, 709/6</p><div class="contact-links"><a href="tel:+77025494649">+7 702 549-46-49 <span>↗</span></a><a href="https://wa.me/77025494649" target="_blank" rel="noopener">Написать в WhatsApp <span>↗</span></a></div></div>
+          <div class="hours-card reveal"><p class="eyebrow">Режим работы</p><dl><div><dt>Понедельник — Пятница</dt><dd>09:00–19:00</dd></div><div><dt>Суббота</dt><dd>10:00–15:00</dd></div><div><dt>Воскресенье</dt><dd>Уточнить</dd></div></dl><p class="seats">30 посадочных мест · Фоновая музыка</p></div>
+        </div>
+      </section>
+
+      <section class="map-section"><div class="container map-card reveal"><div class="map-graphic" aria-hidden="true"><span class="map-road road-a"></span><span class="map-road road-b"></span><span class="map-road road-c"></span><span class="map-pin">B</span></div><div class="map-content"><p class="eyebrow">Как нас найти</p><h2>В Казыбек Би<br />районе</h2><p>ул. Таттимбета, 709/6<br />Караганда</p><a class="button button-gold" href="https://2gis.kz/karaganda/firm/70000001103492382" target="_blank" rel="noopener">Открыть маршрут в 2ГИС <span>↗</span></a></div></div></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark">B</span><span>Barbecue</span></a><p>Кафе восточной кухни</p></div><div><p>г. Караганда, ул. Таттимбета, 709/6</p><a href="tel:+77025494649">+7 702 549-46-49</a></div><div class="footer-actions"><a href="https://wa.me/77025494649" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://2gis.kz/karaganda/firm/70000001103492382" target="_blank" rel="noopener">2ГИС ↗</a><a class="button button-small button-gold" href="tel:+77025494649">Позвонить</a></div></div><div class="container copyright">© <span id="year"></span> Barbecue</div></footer>
+
+    <dialog class="lightbox" aria-label="Просмотр изображения"><button class="lightbox-close" aria-label="Закрыть">×</button><div class="lightbox-art"><span class="placeholder-icon">✦</span><p></p></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
