@@ -26,8 +26,14 @@ document.querySelectorAll('.reveal').forEach((element) => observer.observe(eleme
 
 const lightbox = document.querySelector('.lightbox');
 const lightboxLabel = lightbox.querySelector('p');
+const lightboxImage = lightbox.querySelector('img');
 document.querySelectorAll('.gallery-item').forEach((item) => item.addEventListener('click', () => {
   lightboxLabel.textContent = item.dataset.label;
+  const image = item.dataset.image;
+  lightboxImage.src = image || '';
+  lightboxImage.alt = image ? item.dataset.label : '';
+  lightboxImage.hidden = !image;
+  lightbox.querySelector('.placeholder-icon').hidden = Boolean(image);
   lightbox.showModal();
 }));
 lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
